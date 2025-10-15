@@ -1194,3 +1194,44 @@ h1, h2, h3, h4, h5 {
   background-color: #6a5a5a !important;
   border-color: #6a5a5a !important;
 }
+/* 🌿 Настройка навигации и бургер-меню */
+
+/* === Цвет иконки бургер-меню === */
+.site-menu-toggle .icon-menu {
+  color: #f5a6b8 !important; /* нежно-розовый */
+  transition: color 0.3s ease;
+}
+
+.site-menu-toggle:hover .icon-menu {
+  color: #e48da3 !important; /* чуть темнее при наведении */
+}
+
+/* === Цвет текста пунктов меню === */
+.site-navbar .site-menu > li > a {
+  color: #4b3e3e !important; /* базовый тёплый коричневый */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* === Цвет при наведении === */
+.site-navbar .site-menu > li > a:hover,
+.site-navbar .site-menu > li > a.active {
+  color: #f5a6b8 !important; /* пастельный розовый при наведении */
+}
+
+/* === Sticky версия навигации (при прокрутке) === */
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
+  color: #4b3e3e !important;
+}
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover,
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
+  color: #f5a6b8 !important;
+}
+
+/* === Цвет иконки "бургер" в sticky режиме === */
+.sticky-wrapper.is-sticky .site-menu-toggle .icon-menu {
+  color: #f5a6b8 !important;
+}
+.sticky-wrapper.is-sticky .site-menu-toggle:hover .icon-menu {
+  color: #e48da3 !important;
+}
